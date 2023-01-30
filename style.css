@@ -1,76 +1,69 @@
 @font-face {
   font-family: main;
-  src: url(fonts/Artifakt Element Bold.ttf);
+  src: url(fonts/framd.ttf);
 }
 
-@keyframes slide {
-    0%  {
-        opacity: 0;
-            
-    }
-    100%{
-        opacity: 1;
-    }
+@font-face {
+  font-family: title;
+  src: url(fonts/FRAHV.ttf);
 }
 
 body {
     background-image: linear-gradient(180deg, #1f69bf, #002a79);
     background-repeat: no-repeat;
     background-color: #000000;
-    margin: 0px;
-    padding: 0px;
     overflow-y: hidden;
-    height: 100vh;
+    height: 100vh;`
+}
+
+div.box {
+    margin-left: 25%;
+    width: 50%;
 }
 
 img#logo {
-    width: 240px;
+    width: 300px;
 }
 
 section {
     color: #ffffff;
-    width: 100%;
     font-family: "main", sans-serif;
-    text-transform: uppercase;
     text-align: center;
     user-select: none;
 }
 
 section#header {
-    font-size: 20px;
-    line-height: 13px;
-    position: fixed;
-    top: 25vh;
-    transition: all 0.3s linear;
+    line-height: auto;
+    top: 10vh;
 }
 
-@media (max-width: 800px){
-    section#header {
-        font-size: 15px;
+@media (max-width: 900px){
+    div.box{
+        width: 80%;
+        margin-left: 10%;
         transition: all 0.3s linear;
-        top: 15vh;
     }
 }
 
-section#footer {
-    font-size: 12px;
-    position: fixed;
-    bottom: 0px;
+h1 {
+    font-family: title;
+    font-size: 30px;
+    text-transform: uppercase;
 }
 
-h1, h2, p, a {
-    animation-name: slide;
-    animation-duration: 5s;
-    animation-fill-mode: both;
-}
-
-h2, p, a {
-    animation-delay: 2s;
-    animation-duration: 2s;
+h2 {
+    text-transform: uppercase;
 }
 
 p, a {
     font-size: 14px;
+}
+
+section#footer {
+    font-size: 8px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
 }
 
 a, a:visited {
@@ -78,4 +71,10 @@ a, a:visited {
     padding: 2px 15px 2px 15px;
     background-color: #ffffff;
     text-decoration: none;
+}
+
+hr {
+    width: 25%;
+    border-style: dashed;
+    border-color: #fff;
 }
