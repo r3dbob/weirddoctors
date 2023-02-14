@@ -3,11 +3,16 @@
   src: url(fonts/framd.ttf);
 }
 
+@font-face {
+  font-family: extra;
+  src: url(fonts/FRABK.TTF);
+}
+
 body {
     background-color: #14489b;
     padding: 0px;
     margin: 0px;
-    margin-bottom: 600px;
+    margin-bottom: 950px;
 }
 
 div.box {
@@ -17,7 +22,7 @@ div.box {
 
 div#logo {
     width: 100%;
-    height: 300px;
+    height: 350px;
     background-image: url(images/weirddoctors_logo.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -106,6 +111,15 @@ p#intro {
     text-align: center;
 }
 
+div.block {
+    width: 90%;
+    border-color: #fff;
+    margin: 4%;
+    border-style: solid;
+    border-width: 1%;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
 @media (max-width: 900px){
     div.box{
         width: 80%;
@@ -115,4 +129,18 @@ p#intro {
     div.infoblock {
         width: 100%;
     }
+    div.infoblocks {
+        width: 100%;
+    }
+    body {
+        margin-bottom: 1280px;
+    }
+}
+
+section#roadmap {
+    font-family: 'extra', sans-serif;
+}
+
+h1 {
+    font-family: 'main', sans-serif;
 }
