@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #14489b;
+    background-color: #454545;
     padding: 0px;
     margin: 0px;
 }
@@ -77,35 +77,50 @@ p {
     margin-bottom: 50px;
 }
 
-#whitepaper{
+.whitepaper{
     width: 33%;
-    margin-left: 33%;
     transition: all 0.2s;
 }
 
 @media (max-width: 2000px){
-    #whitepaper{
+    .whitepaper{
         width: 50%;
-        margin-left: 25%;
         transition: all 0.2s;
     }
 }
 
 @media (max-width: 1100px){
-    #whitepaper{
+    .whitepaper{
         width: 80%;
-        margin-left: 10%;
         transition: all 0.2s;
     }
 }
 
 @media (max-width: 750px){
-    #whitepaper{
+    .whitepaper{
         width: 100%;
-        margin-left: 0%;
         transition: all 0.2s;
     }
 }
 h1 {
     font-family: 'main', sans-serif;
+}
+
+#page1 {
+    background-color: #2087b5
+}
+#page3 {
+    background-color: #62ac3b
+}
+#page4 {
+    background-color: #ab55b2
+}
+#page5 {
+    background-color: #1f9568
+}
+#page7 {
+    background-color: #c67321
+}
+#page9 {
+    background-color: #313131
 }
