@@ -17,29 +17,41 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <div id="fadeout"></div>
-        <section id="page1">
-            <img class='whitepaper' src="images/Whitepaper_WEBSITE_1-0_.png" width="100%">
-        </section>
-        <section id="page3">
-            <img class='whitepaper' src="images/Whitepaper_WEBSITE_1-0_3.png" width="100%">
-        </section>
-        <section id="page4">
-            <img class='whitepaper' src="images/Whitepaper_WEBSITE_1-0_4.png" width="100%">
-        </section>
-        <section id="page5">
-            <img class='whitepaper' src="images/Whitepaper_WEBSITE_1-0_5.png" width="100%">
-        </section>
-        <section id="page7">
-            <img class='whitepaper' src="images/Whitepaper_WEBSITE_1-0_6.png" width="100%">
-        </section>
-        <section id="page9">
-            <img class='whitepaper' src="images/Whitepaper_WEBSITE_1-0_7.png" width="100%">
-        </section>
-        <section id="footer">
-            <a class="social" href="https://twitter.com/weirddoctors" target="_blank">twitter</a>
-            <a class="social" href="whitepapers/WeirdDoctors_Whitepaper_1-0.pdf" target='_blank' download>download pdf</a>
-            <a class="social" href="https://discord.gg/nJd3A4UpPz" target="_blank">discord</a>
-        </section>
+        <div class="dropdown">
+            <a class="button" id="menutoggle" onclick="myFunction()" class="dropbtn"></a>
+            <section id="myDropdown" class="menu hide">
+                <a class="button" href="index.html">home</a>
+                <a class="button" href="whitepapers/WeirdDoctors_Whitepaper_1-0.pdf" target="_blank" download>download pdf</a>
+                <a class="button" href="roadmap.html">roadmap</a>
+                <a class="button" href="https://www.jpg.store/collection/weirddoctorsvip" target="_blank">VIP-passes</a>
+                <a class="button" href="https://discord.gg/nJd3A4UpPz" target="_blank">discord</a>
+                <a class="button" href="https://twitter.com/weirddoctors" target="_blank">twitter</a>
+            </section>
+        </div>
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("hide");
+            }     
+        </script>
+        <div>
+            <section id="page1">
+                <img class='page' src="images/Whitepaper_WEBSITE_1-0_.png" width="100%" draggable="false">
+            </section>
+            <section id="page3">
+                <img class='page' src="images/Whitepaper_WEBSITE_1-0_3.png" width="100%" draggable="false">
+            </section>
+            <section id="page4">
+                <img class='page' src="images/Whitepaper_WEBSITE_1-0_4.png" width="100%" draggable="false">
+            </section>
+            <section id="page5">
+                <img class='page' src="images/Whitepaper_WEBSITE_1-0_5.png" width="100%" draggable="false">
+            </section>
+            <section id="page7">
+                <img class='page' src="images/Whitepaper_WEBSITE_1-0_6.png" width="100%" draggable="false">
+            </section>
+            <section id="page9">
+                <img class='page' src="images/Whitepaper_WEBSITE_1-0_7.png" width="100%" draggable="false">
+            </section>
+        </div>
     </body>
 </html>

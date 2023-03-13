@@ -17,14 +17,23 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <div id="fadeout"></div>
+        <div class="dropdown">
+            <a class="button" id="menutoggle" onclick="myFunction()" class="dropbtn"></a>
+            <section id="myDropdown" class="menu hide">
+                <a class="button" href="roadmap.html">roadmap</a>
+                <a class="button" href="whitepaper.html">whitepaper</a>
+                <a class="button" href="https://www.jpg.store/collection/weirddoctorsvip" target="_blank">VIP-passes</a>
+                <a class="button" href="https://discord.gg/nJd3A4UpPz" target="_blank">discord</a>
+                <a class="button" href="https://twitter.com/weirddoctors" target="_blank">twitter</a>
+            </section>
+        </div>
+        <script>
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("hide");
+            }
+        </script>
         <section id="header">
-            <img id='logo' src="images/weirddoctors_logo.png">
-        </section>
-        <section id="footer">
-            <a class="social" href="https://twitter.com/weirddoctors" target="_blank">twitter</a>
-            <a class="social" href="whitepaper.html" target='_blank'>whitepaper</a>
-            <a class="social" href="https://discord.gg/nJd3A4UpPz" target="_blank">discord</a>
+            <img id='logo' src="images/weirddoctors_logo.png" draggable="false">
         </section>
     </body>
 </html>
